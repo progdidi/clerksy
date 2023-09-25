@@ -1,0 +1,12 @@
+.shapes {
+    padding: 114px 0 135px;
+    background-color: #F2EFE6;
+    text-align: center;
+    color: var(--dark-green-color);
+    &__title {
+        margin-bottom: 27px;
+    }
+    &__descr {
+        margin-bottom: 2px;
+    }
+}
