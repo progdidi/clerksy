@@ -1,0 +1,27 @@
+.book {
+    padding: 120px 0 123px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .book__info {
+            &-title {
+                margin-bottom: 25px;
+            }
+            &-descr {
+                margin-bottom: 19px;
+            }
+        }
+    
+        .book__media {
+            background-image: url(../../images/book/bg.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            padding: 43px 95px 55px 86px;
+        }
+    }
+}
+
+
+
