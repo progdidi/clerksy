@@ -1,0 +1,28 @@
+.quality {
+    padding: 66px 0 120px;
+    background-color: var(--dark-green-color);
+    color: var(--white-color);
+    &__title {
+        margin-bottom: 74px;
+        text-align: center;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .quality__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &-img {
+                margin-bottom: 28px;
+            }
+            &-text {
+                text-align: center;
+                max-width: 198px;
+            }
+        }
+    }
+}
+
+
