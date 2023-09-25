@@ -43,7 +43,7 @@
             margin-bottom: 35px;
             &-img {
                 object-fit: cover;
-                max-width: 70%;
+                max-width: 50%;
             }
         }
     }
@@ -68,6 +68,11 @@
 
 @media (max-width: 720px) {
     .benefits {
+        &__item {
+            &-img {
+                max-width: 60%;
+            }
+        }
         .partners {
             &__title {
                 margin-bottom: 30px;
