@@ -1,0 +1,69 @@
+.how {
+    padding: 180px 0 120px;
+    .how__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 98px;
+        margin-bottom: 114px;
+        .how__info {
+            &-title {
+                margin-bottom: 27px;
+            }
+        }
+    }
+
+    .interests {
+        &__title {
+            margin-bottom: 26px;
+            text-align: center;
+        }
+        &__descr {
+            margin-bottom: 18px;
+            text-align: center;
+        }
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            .interests__item {
+                border-radius: 15px;
+                background: #FBFAF7;
+                box-shadow: 5px 5px 20px 0px #E9E4D5;
+                padding: 50px 40px 60px 40px;
+                width: 353px;
+                margin: 0 20px;
+                &-img {
+                    margin-bottom: 20px;
+                }
+                &-title {
+                    font-family: "Recoleta", sans-serif;
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 31.5px;
+                    margin-bottom: 23px;
+                }
+                &-descr {
+                    margin-bottom: 15px;
+                    padding-left: 19px;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        background-color: var(--dark-green-color);
+                        width: 8px;
+                        height: 8px;
+                        top: 50%;
+                        border-radius: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
