@@ -85,9 +85,21 @@ header {
     }
 }
 
+@media(max-width: 740px) {
+    .section__title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
 @media(max-width: 440px) {
     .green-btn {
         padding: 6px 11px;
         font-size: 12px;
+    }
+
+    .section__title {
+        font-size: 35px;
+        line-height: 42px;
     }
 }
