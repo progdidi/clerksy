@@ -1,0 +1,74 @@
+@import 'var';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+:root {    
+    --dark-green-color: #163A24;
+    --green-color: #198C36;
+    --yellow-color: #F7BC28;
+    --white-color: #FBFAF7;
+}
+
+@font-face {
+    font-family: "Recoleta";
+    src: url(../fonts/recoleta-regulardemo.otf);
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+header {
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-family: "Recoleta", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.green-btn {
+    background-color: var(--green-color);
+    padding: 15px 25px;
+    border-radius: 160px;
+    color: var(--white-color);
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    &:hover {
+        border: 1px solid var(--white-color);
+    }
+}
