@@ -1,0 +1,89 @@
+.footer {
+    .newsletter {
+        padding: 54px 0 60px;
+        background-color: var(--pink-color);
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .newsletter__about {
+                &-title {
+                    margin-bottom: 26px;
+                }
+            }
+        
+            .newsletter__form {
+                max-width: 600px;
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                &-input {
+                    width: 100%;
+                    border-radius: 255px;
+                    border: 1px solid #F2EFE6;
+                    padding: 15px 25px;
+                    margin-bottom: 11px;
+                }
+                &-btn {
+                    position: absolute;
+                    right: 0;
+                }
+                &-label {
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+                &-link {
+                    color: var(--green-color);
+                }
+            }
+        }
+        
+    }
+    .footer__top {
+        padding: 45px 0px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--pink-color);
+        .footer__tagline {
+            font-family: "Recoleta", sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+        }
+        .social {
+            &__list {
+                display: flex;
+                gap: 14px;
+                align-items: center;
+            }
+        }
+    }
+    
+    
+    
+    .footer__policy {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 0;
+        &-links {
+            display: flex;
+            gap: 14px;
+            color: var(--green-color);
+
+        }
+        &-link {
+            border-bottom: 1px solid transparent;
+            transition: all 0.5;
+            &:hover {
+                border-bottom: 1px solid var(--green-color);
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
