@@ -30,7 +30,7 @@
                 background: #FBFAF7;
                 box-shadow: 5px 5px 20px 0px #E9E4D5;
                 padding: 50px 40px 60px 40px;
-                width: 353px;
+                width: 33%;
                 margin: 0 20px;
                 transition: all 0.5s;
                 &:hover {
@@ -61,6 +61,115 @@
                         transform: translateY(-50%);
                         left: 0;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    .how {
+        .how__inner {
+            padding: 0 30px;
+            gap: 40px;
+            .how__img {
+                object-fit: cover;
+                width: 50%;
+            }
+
+        }
+
+        .interests {
+            &__inner {
+                gap: 10px;
+            }
+            .interests__item {
+                padding: 20px;
+                margin: 0;
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .how {
+        .interests {
+            &__inner {
+                gap: 10px;
+                justify-content: space-around;
+            }
+            .interests__item {
+                padding: 10px 10px 10px 15px;
+                &-img {
+                    width: 45px;
+                    height: 45px;
+                }
+                &-title {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+                &-descr {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    .how {
+        padding: 80px 0;
+        .interests {
+            &__inner {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .interests__item {
+                width: 70%;
+                text-align: center;
+                position: relative;
+                margin-bottom: 40px;
+                &-img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                &-title {
+                    padding-left: 20px;
+                }
+                &-list {
+                    max-width: 60%;
+                    margin: 0 auto;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 520px) {
+    .how {
+        .how__inner {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .how__img {
+                width: 80%;
+            }
+        }
+        .interests {
+            .interests__item {
+                width: 85%;
+                &-title {
+                    padding-left: 25px;
+                }
+                &-list {
+                    max-width: 80%;
                 }
             }
         }
