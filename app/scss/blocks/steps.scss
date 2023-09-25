@@ -1,0 +1,71 @@
+.steps {
+    background-color: var(--pink-color);
+    padding: 114px 0 124px;
+    &__title {
+        text-align: center;
+        margin-bottom: 26px;
+        
+    }
+    &__descr {
+        text-align: center;
+        margin-bottom: 18px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        .steps__item {
+            width: 249px;
+            position: relative;
+            text-align: center;
+            padding: 19px 0 22px;
+            &-descr {
+                margin-bottom: 13px;
+            }
+            &-number {
+                font-family: "Recoleta", sans-serif;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 31.5px; 
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url(../../images/steps/arrow.svg);
+                width: 76px;
+                height: 36px;
+                background-repeat: no-repeat;
+                top: 50%;
+                right: -100px;
+                transform: translateY(-50%);
+
+            }
+            &.second::after {
+                background-image: url(../../images/steps/arrow2.svg);
+            }
+            
+            &.third::after {
+                background-image: url(../../images/steps/round.svg);
+                left: -18px;
+                top: 58px;
+                right: 0px;
+                bottom: 0;
+                width: 290px;
+                height: 183px;
+            }
+        
+            
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        min-width: 244px;
+    }
+}
+
+
+
+
+

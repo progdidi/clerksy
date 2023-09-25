@@ -32,6 +32,10 @@
                 padding: 50px 40px 60px 40px;
                 width: 353px;
                 margin: 0 20px;
+                transition: all 0.5s;
+                &:hover {
+                    transform: scale(1.1);
+                }
                 &-img {
                     margin-bottom: 20px;
                 }
