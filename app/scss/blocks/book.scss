@@ -23,5 +23,43 @@
     }
 }
 
+@media(max-width: 720px) {
+    .book {
+        padding: 80px 0px;
+        &__inner {
+            .book__info{
+                padding-left: 20px;
+            }
+            .book__media {
+                padding: 43px 40px 55px 50px;
+            }
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .book {
+        &__inner {
+            position: relative;
+            .book__info{
+                padding-left: 10px;
+                &-title {
+                    font-size: 26px;
+                    line-height: 31px;
+                }
+                &-btn {
+                    position: absolute;
+                    bottom: -60px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            .book__media {
+                padding: 43px 10px 55px 50px;
+            }
+        }
+    }
+}
+
 
 
