@@ -5,7 +5,6 @@
         padding: 20px 0;
         display: flex;
         justify-content: space-between;
-    
         .header__info {
             display: flex;
             align-items: center;
@@ -13,6 +12,13 @@
             &-btn.login {
                 color: var(--white-color);
                 transition: all 0.5s;
+            }
+            &-icon {
+                &-img {
+                    width: 36px;
+                    height: 36px;
+                    display: none;
+                }
             }
         }
     }
@@ -40,8 +46,96 @@
 }
 
 @media (max-width: 1100px) {
-    .promo {
-        flex-direction: column;
-        align-items: center;
+    .header {
+        .promo {
+            flex-direction: column;
+            align-items: center;
+            &__info {
+                padding-top: 80px;
+                &-title {
+                    max-width: 90%;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
+
+                &-descr {
+                    max-width: 80%;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+            }
+
+            &__media {
+                &-img {
+                    object-fit: cover;
+                    max-width: 70%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+    }
+    
+}
+
+@media(max-width: 700px) {
+    .header {
+        .header__top {
+            .header__info {
+                gap: 14px;
+            }
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    .header {
+        .header__top {
+            position: relative;
+            .header__info {
+                gap: 12px;
+                &-phone {
+                    display: none;
+                }
+                &-btn.login {
+                    display: none;
+                }
+                &-icon {
+                    &-img {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 440px) {
+    .header {
+        .header__top {
+            position: relative;
+            .logo {
+                &__img {
+                    object-fit: cover;
+                    width: 70%;
+                }
+            }
+            .header__info {
+                gap: 11px;
+                &-phone {
+                    display: none;
+                }
+                &-btn.login {
+                    display: none;
+                }
+                &-icon {
+                    &-img {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }

@@ -50,8 +50,8 @@ header {
 }
 
 .container {
-    max-width: 1200px;
-    padding: 0 10px;
+    max-width: 1220px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -72,5 +72,22 @@ header {
     transition: all 0.5s;
     &:hover {
         border: 1px solid var(--white-color);
+    }
+}
+
+@media(max-width: 740px) {
+    .green-btn {
+        padding: 9px 14px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media(max-width: 440px) {
+    .green-btn {
+        padding: 6px 11px;
+        font-size: 12px;
     }
 }
