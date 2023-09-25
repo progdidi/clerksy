@@ -1,5 +1,8 @@
 .start {
     background-image: url(../../images/start/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom bottom;
     padding: 114px 0 124px;
     text-align: center;
     color: var(--white-color);
