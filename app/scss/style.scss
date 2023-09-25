@@ -2,47 +2,12 @@
 @import 'var';
 @import 'reset';
 
+//blocks
+@import 'blocks/header.scss';
+@import 'blocks/benefits.scss';
 
-.header {
-    background-color: var(--dark-green-color);
-    color: var(--white-color);
-    .header__top {
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-between;
-    
-        .header__info {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-            &-btn.login {
-                color: var(--white-color);
-                transition: all 0.5s;
-            }
-        }
-    }
 
-    .promo {
-        display: flex;
-        justify-content: space-between;
-        &__info {
-            padding-top: 120px;
-            &-title {
-                max-width: 391px;
-                margin-bottom: 18px;
-                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                font-family: "Recoleta", sans-serif;
-                font-size: 48px;
-                font-weight: 600;
-                line-height: 65.25px;
-            }
-            &-descr {
-                max-width: 475px;
-                font-size: 18px;
-            }
-        }
-    }
-}
+
 
 
 
