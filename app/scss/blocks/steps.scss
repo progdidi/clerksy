@@ -46,8 +46,8 @@
             
             &.third::after {
                 background-image: url(../../images/steps/round.svg);
-                left: -18px;
-                top: 58px;
+                left: -31px;
+                top: 71px;
                 right: 0px;
                 bottom: 0;
                 width: 290px;
@@ -72,10 +72,26 @@
             align-items: center;
             justify-content: center;
             .steps__item {
-                margin-bottom: 50px;
-
-                &::after {
-                    right: 0;
+                margin-bottom: 73px;
+                &.first::after {
+                    bottom: -39px;
+                    left: 37%;
+                    transform: rotate(100deg);
+                    right: auto;
+                    top: auto;
+                }
+                &.second::after {
+                    bottom: -39px;
+                    left: 37%;
+                    transform: rotate(78deg);
+                    right: auto;
+                    top: auto; 
+                }
+                &.third {
+                    padding-top: 25px;
+                    &::after {
+                        top: 75px;
+                    }
                 }
             }
         }

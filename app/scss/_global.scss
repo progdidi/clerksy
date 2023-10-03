@@ -23,7 +23,7 @@ html {
 
 @font-face {
     font-family: "Recoleta";
-    src: url(../fonts/recoleta-regulardemo.otf);
+    src: url(../fonts/Recoleta-Regular.woff2);
 }
 
 body {
@@ -68,11 +68,7 @@ header {
     padding: 15px 25px;
     border-radius: 160px;
     color: var(--white-color);
-    border: 1px solid transparent;
     transition: all 0.5s;
-    &:hover {
-        border: 1px solid var(--white-color);
-    }
 }
 
 @media(max-width: 740px) {

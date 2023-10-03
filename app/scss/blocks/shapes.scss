@@ -7,6 +7,15 @@
         margin-bottom: 27px;
     }
     &__descr {
-        margin-bottom: 2px;
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 500px) {
+    .shapes {
+        padding: 80px 0;
+        &__descr {
+        margin-bottom: 20px;
+        }
     }
 }
