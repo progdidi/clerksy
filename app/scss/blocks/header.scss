@@ -26,6 +26,7 @@
     .promo {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         &__info {
             padding-top: 120px;
             &-title {
@@ -41,6 +42,8 @@
                 max-width: 475px;
                 font-size: 18px;
             }
+        }
+        &__media-img {
         }
     }
 }
