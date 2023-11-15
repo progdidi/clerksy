@@ -3,26 +3,29 @@
     color: var(--white-color);
     .header__top {
         padding: 20px 0;
-        display: flex;
-        justify-content: space-between;
-        .header__info {
+        &-inner {
             display: flex;
-            align-items: center;
-            gap: 24px;
-            &-btn.login {
-                color: var(--white-color);
-                transition: all 0.5s;
-            }
-            &-icon {
-                &-img {
-                    width: 36px;
-                    height: 36px;
-                    display: none;
+            justify-content: space-between;
+            .header__info {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                &-btn.login {
+                    color: var(--white-color);
+                    transition: all 0.5s;
+                }
+                &-icon {
+                    &-img {
+                        width: 36px;
+                        height: 36px;
+                        display: none;
+                    }
                 }
             }
         }
         &.fixed {
             position: fixed;
+            z-index: 100;
             background-color: var(--dark-green-color);
             left: 0;
             right: 0;
@@ -30,26 +33,33 @@
     }
 
     .promo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &__info {
-            padding-top: 120px;
-            &-title {
-                max-width: 391px;
-                margin-bottom: 18px;
-                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                font-family: "Recoleta", sans-serif;
-                font-size: 48px;
-                font-weight: 600;
-                line-height: 65.25px;
+        background-image: url(../../images/header/promo.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: calc(100vh - 98px);
+            position: relative;
+            .promo__info {
+                padding-top: 120px;
+                min-width: 475px;
+                &-title {
+                    max-width: 391px;
+                    margin-bottom: 18px;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    font-family: "Recoleta", sans-serif;
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 65.25px;
+                }
+                &-descr {
+                    max-width: 475px;
+                    font-size: 18px;
+                }
             }
-            &-descr {
-                max-width: 475px;
-                font-size: 18px;
-            }
-        }
-        &__media-img {
         }
     }
 }
@@ -57,9 +67,11 @@
 @media (max-width: 1100px) {
     .header {
         .promo {
+            background-position: bottom center;
+            &__inner {
             flex-direction: column;
             align-items: center;
-            &__info {
+            .promo__info {
                 padding-top: 80px;
                 &-title {
                     max-width: 90%;
@@ -75,14 +87,9 @@
                     margin-bottom: 15px;
                 }
             }
+        }
 
-            &__media {
-                &-img {
-                    object-fit: cover;
-                    max-width: 70%;
-                    margin: 0 auto;
-                }
-            }
+            
         }
 
     }
@@ -118,6 +125,18 @@
                 }
             }
         }
+
+        .promo {
+            &__inner {
+                .promo__info {
+                    min-width: auto;
+                    &-title {
+                        font-size: 42px;
+                        line-height: 51px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -146,6 +165,10 @@
                     }
                 }
             }
+        }
+
+        .promo__inner {
+            min-height: calc(100vh - 78px);
         }
     }
 }
