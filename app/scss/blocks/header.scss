@@ -21,6 +21,12 @@
                 }
             }
         }
+        &.fixed {
+            position: fixed;
+            background-color: var(--dark-green-color);
+            left: 0;
+            right: 0;
+        }
     }
 
     .promo {

@@ -1,5 +1,5 @@
 $(function(){
-
+    //header button
     const headerBtn = document.querySelector('.login');
     headerBtn.addEventListener('mouseover', () => {
         headerBtn.classList.add('green-btn');
@@ -8,9 +8,20 @@ $(function(){
         headerBtn.classList.remove('green-btn');
     })
 
+    //fixed menu
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header__top');
+        const scrollHeight = window.pageYOffset;
+        const headerHeight = header.getBoundingClientRect().height;
+        if(scrollHeight > headerHeight) {
+          header.classList.add('fixed');
+        } else {
+          header.classList.remove('fixed')
+        }
+    })
+
 
     //modal
-
     const buttons = document.querySelectorAll('button');
     const modal = document.querySelector('.modal');
     const closeBtn = document.querySelector('.close-btn');
